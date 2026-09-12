@@ -1,0 +1,49 @@
+:root {
+    --background-primary: #f2f2f7;
+    --card-background: rgba(255, 255, 255, 0.9);
+    --card-border: rgba(0, 0, 0, 0.05);
+    --card-hover: rgba(255, 255, 255, 1);
+    --text-primary: #000000;
+    --text-secondary: #8e8e93;
+    --text-muted: #aeaeb2;
+    --tabbar-background: rgba(248, 248, 250, 0.88);
+    --tabbar-border: rgba(0, 0, 0, 0.08);
+    --ring-bg: rgba(0, 0, 0, 0.06);
+    --input-background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] {
+    --background-primary: #0b0b0e;
+    --card-background: rgba(26, 26, 32, 0.75);
+    --card-border: rgba(255, 255, 255, 0.07);
+    --card-hover: rgba(34, 34, 42, 0.85);
+    --text-primary: #ffffff;
+    --text-secondary: #8e8e98;
+    --text-muted: #5e5e68;
+    --tabbar-background: rgba(16, 16, 20, 0.85);
+    --tabbar-border: rgba(255, 255, 255, 0.08);
+    --ring-bg: rgba(255, 255, 255, 0.08);
+    --input-background: rgba(255, 255, 255, 0.06);
+}
+
+/* Faste Apple Health inspirerede accenter */
+:root {
+    --purple: #bf5af2;
+    --purple-bg: rgba(191, 90, 242, 0.14);
+    --purple-glow: rgba(191, 90, 242, 0.25);
+
+    --orange: #ff9f0a;
+    --orange-bg: rgba(255, 159, 10, 0.14);
+    --orange-glow: rgba(255, 159, 10, 0.25);
+
+    --green: #30d158;
+    --green-bg: rgba(48, 209, 88, 0.14);
+    --green-glow: rgba(48, 209, 88, 0.25);
+
+    --red: #ff375f;
+    --red-bg: rgba(255, 55, 95, 0.14);
+    --red-glow: rgba(255, 55, 95, 0.25);
+
+    --blue: #0a84ff;
+    --blue-bg: rgba(10, 132, 255, 0.14);
+}

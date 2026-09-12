@@ -126,27 +126,14 @@ local function updateHeartRate(speed, inVehicle, ped)
     return math.max(45, math.floor(currentHeartRate + jitter))
 end
 
-local isAppOpen = false
-
-RegisterNUICallback("appOpened", function(_, cb)
-    isAppOpen = true
-    cb(true)
-end)
-
-RegisterNUICallback("appClosed", function(_, cb)
-    isAppOpen = false
-    cb(true)
-end)
-
 local function pushUpdate()
-    if not isAppOpen then
-        local phoneOpen = false
-        pcall(function()
-            phoneOpen = exports["lb-phone"]:IsOpen()
-        end)
-        if not phoneOpen then
-            return
-        end
+    local phoneOpen = false
+    pcall(function()
+        phoneOpen = exports["lb-phone"]:IsOpen()
+    end)
+
+    if not phoneOpen then
+        return
     end
 
     exports["lb-phone"]:SendCustomAppMessage(identifier, {
